@@ -2,7 +2,9 @@ from math import sqrt
 
 
 def is_prime(k: int) -> bool:
-    """A prime number is a natural number greater than 1 that is not a product of two smaller natural numbers"""
+    """
+    A prime number is a natural number greater than 1 that is not a product of two smaller natural numbers
+    """
     if k < 2:
         return False
     if k == 2:
@@ -15,6 +17,7 @@ def is_prime(k: int) -> bool:
     return True
 
 
-for i in range(100):
-    if is_prime(i):
-        print(i, end=", ")
+if __name__ == '__main__':
+    for i in range(100):
+        if is_prime(i):
+            print(i, end=", ")
